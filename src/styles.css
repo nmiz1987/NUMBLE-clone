@@ -1,0 +1,161 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: rgb(233, 233, 233);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 200;
+    line-height: 1.2;
+}
+
+header {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+hr {
+    width: 15rem;
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: rgb(65, 65, 65);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+label {
+    height: 4rem;
+    font-size: 2rem;
+    color: rgb(65, 65, 65);
+}
+
+#statsButton {
+    border-width: 0;
+    background-color: transparent;
+}
+
+.box,
+.box_ans {
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    border: 1px solid rgb(65, 65, 65);
+    border-radius: 5px;
+}
+
+.box {
+    color: rgb(65, 65, 65);
+    background-color: transparent
+}
+
+.box_ans {
+    color: rgb(65, 65, 65);
+    background-color: #6c757d;
+    color: white;
+    border-width: 0;
+}
+
+#b_enter {
+    width: 10rem;
+    height: 3rem;
+    font-size: 2rem
+}
+
+.box:hover {
+    background-color: rgba(112, 112, 112, 0.356);
+    transition-duration: 0.3s;
+}
+
+.box_ans:hover {
+    background-color: rgba(77, 77, 78, 0.541);
+    transition-duration: 0.3s;
+}
+
+.boxes,
+.ans_boxes {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.boxes {
+    margin-bottom: 80px;
+}
+
+.ans_boxes {
+    align-items: center;
+}
+
+.row>div {
+    display: inline;
+}
+
+#a_1,
+#a_2,
+#a_3,
+#a_4,
+#a_5 {
+    display: none;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.filled {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+}
+
+.current {
+    color: black;
+    background-color: green;
+    border-color: #343a40;
+}
+
+.wrongPlace {
+    color: black;
+    background-color: yellow;
+    border-color: #343a40;
+}
+
+footer {
+    text-align: center;
+    padding: 4rem 0;
+}
