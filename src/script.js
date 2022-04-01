@@ -56,8 +56,7 @@ function userInput(e) {
                 if (correctAns == 6) {
                     console.log("Game finished!")
                     countWon.innerText = Number(countWon.innerText) + 1
-                    resultWindow.style.display = "flex;";
-                    // show.setAttribute('style', 'display: flex;')
+                    resultWindow.setAttribute('style', 'display: flex;')
                 }
 
 
