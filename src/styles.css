@@ -221,8 +221,6 @@ footer {
     border-radius: 5px;
 }
 
-.Guess td:first-child {}
-
 .Guess td:nth-child(2) {
     background-color: #9d9d9d;
     color: white;

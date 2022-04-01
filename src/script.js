@@ -13,9 +13,9 @@ var col = 0 // location in column
 var activeRow = 0 // location in row
 var showNext = 0 // to reveal next row
 var correctAns = 0
-countPlayed.innerText = 0
-countWon.innerText = 0
-countWin.innerText = 0
+countPlayed.innerText = 0 // init var
+countWon.innerText = 0 // init var
+countWin.innerText = 0 // init var
 
 var currentBox = boxes[col + 7 * activeRow]
 
@@ -45,7 +45,6 @@ function userInput(e) {
             var temp = []
             for (let i = 0; i < 7; i++)
                 temp.push(boxes[i + 7 * activeRow].innerText)
-                // try {
             if (eval(temp.join('')) != resultRequired) {
                 console.log("Wrong answer!")
             } else {
@@ -80,10 +79,6 @@ function userInput(e) {
                 col = 0
                 currentBox = boxes[col + 7 * activeRow]
             }
-            // } catch {
-            // console.log("invalid input")
-            // }
-
         }
         if ((col % 7 == 0) && !(Object.is(e.code, 'Enter')) && !(keyButtonEnter == 'Enter')) { // don't move to next row
             col--
