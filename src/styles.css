@@ -134,7 +134,8 @@ label {
 #a_2,
 #a_3,
 #a_4,
-#a_5 {
+#a_5,
+#a_6 {
     display: none;
 }
 
@@ -172,6 +173,7 @@ footer {
 }
 
 .result-window {
+    display: flex;
     position: fixed;
     top: 10vh;
     left: 35vw;
@@ -181,7 +183,6 @@ footer {
     border-radius: 10px;
     background-color: white;
     padding: 5px;
-    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 7px;
