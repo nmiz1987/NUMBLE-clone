@@ -51,6 +51,11 @@ h2 {
     font-size: 1rem;
 }
 
+h3 {
+    font-size: 1.25rem;
+    color: rgb(65, 65, 65);
+}
+
 label {
     height: 4rem;
     font-size: 2rem;
@@ -60,6 +65,10 @@ label {
 #statsButton {
     border-width: 0;
     background-color: transparent;
+}
+
+#statsButton:hover {
+    cursor: pointer;
 }
 
 .box,
@@ -83,7 +92,7 @@ label {
     border-width: 0;
 }
 
-#b_enter {
+#Enter {
     width: 10rem;
     height: 3rem;
     font-size: 2rem
@@ -153,9 +162,71 @@ label {
     color: black;
     background-color: yellow;
     border-color: #343a40;
+    transition: all .5s ease-in-out;
+    /*make it smooth*/
 }
 
 footer {
     text-align: center;
     padding: 4rem 0;
+}
+
+.result-window {
+    position: fixed;
+    top: 10vh;
+    left: 35vw;
+    height: 500px;
+    width: 500px;
+    border: 3px solid rgb(168, 168, 168);
+    border-radius: 10px;
+    background-color: white;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+
+.score tr:first-child {
+    font-size: 3rem;
+}
+
+.score tr:nth-child(2) {
+    font-size: 1rem;
+}
+
+.close-win {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+#symbol {
+    border: 0px;
+    background-color: transparent;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(149, 149, 149);
+}
+
+#symbol:hover {
+    cursor: pointer;
+}
+
+.Guess td {
+    font-size: 1rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 5px;
+}
+
+.Guess td:first-child {}
+
+.Guess td:nth-child(2) {
+    background-color: #9d9d9d;
+    color: white;
+}
+
+td {
+    text-align: center
 }
